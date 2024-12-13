@@ -1,0 +1,158 @@
+# Compile of mux6x1_1b.vhd failed with 1 errors.
+# Compile of and4bits.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of and4bits.vhd was successful.
+# Compile of portanot.vhd was successful.
+# Compile of and4portas.vhd was successful.
+# Compile of and4portas.vhd was successful.
+# Compile of or6portas.vhd failed with 1 errors.
+# Compile of not1porta.vhd was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of or6portas.vhd was successful.
+# Compile of mux6x1_1b.vhd failed with 41 errors.
+# Compile of and4portas.vhd was successful.
+# Compile of or6portas.vhd was successful.
+# Compile of not1porta.vhd was successful.
+# 4 compiles, 1 failed with 41 errors.
+# Compile of mux6x1_1b.vhd failed with 41 errors.
+# Compile of and4portas.vhd was successful.
+# Compile of or6portas.vhd was successful.
+# Compile of not1porta.vhd was successful.
+# 4 compiles, 1 failed with 41 errors.
+# Compile of mux6x1_1b.vhd failed with 41 errors.
+# Compile of mux6x1_1b.vhd was successful.
+do mux6x1_1b.do
+# vsim work.mux6x1_1b 
+# Start time: 17:31:07 on Dec 13,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux6x1_1b(behavioral)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# Loading work.or6portas(ckt)
+# Compile of mux6x1_1b.vhd failed with 6 errors.
+# Compile of and4portas.vhd was successful.
+# Compile of or6portas.vhd was successful.
+# Compile of not1porta.vhd was successful.
+# 4 compiles, 1 failed with 6 errors.
+# Compile of mux6x1_1b.vhd failed with 6 errors.
+# Compile of mux6x1_1b.vhd failed with 6 errors.
+# Compile of mux6x1_1b.vhd failed with 6 errors.
+# Compile of mux6x1_1b.vhd was successful.
+do mux6x1_1b.do
+# End time: 17:43:07 on Dec 13,2024, Elapsed time: 0:12:00
+# Errors: 0, Warnings: 26
+# vsim work.mux6x1_1b 
+# Start time: 17:43:07 on Dec 13,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux6x1_1b(behavioral)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# Loading work.or6portas(ckt)
+# Compile of mux6x1_1b.vhd was successful.
+# Compile of and4portas.vhd was successful.
+# Compile of or6portas.vhd was successful.
+# Compile of not1porta.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+do mux6x1_1b.do
+# End time: 17:43:32 on Dec 13,2024, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 2
+# vsim work.mux6x1_1b 
+# Start time: 17:43:32 on Dec 13,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux6x1_1b(behavioral)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# Loading work.or6portas(ckt)
+# Compile of mux6x1_1b.vhd failed with 6 errors.
+# Compile of mux6x1_1b.vhd was successful.
+# Compile of mux6x1_1b.vhd was successful.
+# Compile of and4portas.vhd was successful.
+# Compile of or6portas.vhd was successful.
+# Compile of not1porta.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+do mux6x1_1b.do
+# End time: 17:45:44 on Dec 13,2024, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 4
+# vsim work.mux6x1_1b 
+# Start time: 17:45:44 on Dec 13,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux6x1_1b(behavioral)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# Loading work.or6portas(ckt)
+# Compile of mux6x1_1b.vhd was successful.
+# Compile of and4portas.vhd was successful.
+# Compile of or6portas.vhd was successful.
+# Compile of not1porta.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+do mux6x1_1b.do
+# End time: 17:47:48 on Dec 13,2024, Elapsed time: 0:02:04
+# Errors: 0, Warnings: 2
+# vsim work.mux6x1_1b 
+# Start time: 17:47:48 on Dec 13,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux6x1_1b(behavioral)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# Loading work.or6portas(ckt)
+# Compile of mux6x1_1b.vhd was successful.
+do mux6x1_1b.do
+# End time: 17:50:02 on Dec 13,2024, Elapsed time: 0:02:14
+# Errors: 0, Warnings: 2
+# vsim work.mux6x1_1b 
+# Start time: 17:50:02 on Dec 13,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux6x1_1b(behavioral)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# Loading work.or6portas(ckt)
+do mux6x1_1b.do
+# End time: 17:51:08 on Dec 13,2024, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 1
+# vsim work.mux6x1_1b 
+# Start time: 17:51:08 on Dec 13,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux6x1_1b(behavioral)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# Loading work.or6portas(ckt)
+do mux6x1_1b.do
+# End time: 17:52:08 on Dec 13,2024, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 1
+# vsim work.mux6x1_1b 
+# Start time: 17:52:08 on Dec 13,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux6x1_1b(behavioral)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# Loading work.or6portas(ckt)
+do mux6x1_1b.do
+# End time: 17:52:55 on Dec 13,2024, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 1
+# vsim work.mux6x1_1b 
+# Start time: 17:52:55 on Dec 13,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux6x1_1b(behavioral)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# Loading work.or6portas(ckt)
+# End time: 17:54:56 on Dec 13,2024, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 1

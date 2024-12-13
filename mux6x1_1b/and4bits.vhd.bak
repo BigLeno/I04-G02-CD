@@ -1,0 +1,8 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity and4portas is
+    port (
+        entrada_a_and_4_portas, entrada_b_and_4_portas, entrada_c_and_4_portas, entrada_d_and_4_portas : in std_logic;
+        saida_and_4_portas : out std_logic);
+end and4portas;

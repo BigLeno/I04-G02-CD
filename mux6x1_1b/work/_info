@@ -1,0 +1,175 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Eand4portas
+Z0 w1734122245
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 36
+Z3 dC:/Users/user/Documents/Modelsim
+Z4 8C:/Users/user/Documents/Modelsim/and4portas.vhd
+Z5 FC:/Users/user/Documents/Modelsim/and4portas.vhd
+l0
+L4 1
+VdWOM5NN4jCHS@GYXS6H231
+!s100 OblOQ6jnkng>3__P=F^o11
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1734122861
+!i10b 1
+Z8 !s108 1734122861.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/Modelsim/and4portas.vhd|
+Z10 !s107 C:/Users/user/Documents/Modelsim/and4portas.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Ackt
+R1
+R2
+DEx4 work 10 and4portas 0 22 dWOM5NN4jCHS@GYXS6H231
+!i122 36
+l12
+Z13 L11 4
+VD[^>zM1?BF_9N3ZGfXjJY3
+!s100 @ZWQQhIQ;mB@>XS`aNjzJ0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emux6x1_1b
+Z14 w1734122973
+R1
+R2
+!i122 39
+R3
+Z15 8C:/Users/user/Documents/Modelsim/mux6x1_1b.vhd
+Z16 FC:/Users/user/Documents/Modelsim/mux6x1_1b.vhd
+l0
+L4 1
+V8GnBZZhFR:KmfZ<8n34K23
+!s100 JbQiQ70bd[BB?E><NDYzM0
+R6
+32
+Z17 !s110 1734122994
+!i10b 1
+Z18 !s108 1734122994.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/Modelsim/mux6x1_1b.vhd|
+Z20 !s107 C:/Users/user/Documents/Modelsim/mux6x1_1b.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 9 mux6x1_1b 0 22 8GnBZZhFR:KmfZ<8n34K23
+!i122 39
+l44
+L12 82
+V=<[2IgI:>::0;lBj4>nUZ0
+!s100 N=:Z53jazI:mQbBY`S>Y80
+R6
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Eor6portas
+Z21 w1734122209
+R1
+R2
+!i122 37
+R3
+Z22 8C:/Users/user/Documents/Modelsim/or6portas.vhd
+Z23 FC:/Users/user/Documents/Modelsim/or6portas.vhd
+l0
+L4 1
+VzbaEZ3l6P5UndJbn?Q@B]2
+!s100 KQ2IQ?JJ_aSGK]3E3]_D33
+R6
+32
+Z24 !s110 1734122862
+!i10b 1
+Z25 !s108 1734122862.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/Modelsim/or6portas.vhd|
+Z27 !s107 C:/Users/user/Documents/Modelsim/or6portas.vhd|
+!i113 1
+R11
+R12
+Ackt
+R1
+R2
+DEx4 work 9 or6portas 0 22 zbaEZ3l6P5UndJbn?Q@B]2
+!i122 37
+l12
+R13
+V_0Mff5^TKh9E=17k[<SIm3
+!s100 _UITL[3DYe>URC]nSbC0Z2
+R6
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R11
+R12
+Eportanot
+Z28 w1734118790
+R1
+R2
+!i122 38
+R3
+Z29 8C:/Users/user/Documents/Modelsim/not1porta.vhd
+Z30 FC:/Users/user/Documents/Modelsim/not1porta.vhd
+l0
+L4 1
+V`cn@N<FzE3dA6cE80bM800
+!s100 R;iohTd;MhKnW@W6RHgM62
+R6
+32
+R24
+!i10b 1
+R25
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/Modelsim/not1porta.vhd|
+Z32 !s107 C:/Users/user/Documents/Modelsim/not1porta.vhd|
+!i113 1
+R11
+R12
+Ackt
+R1
+R2
+DEx4 work 8 portanot 0 22 `cn@N<FzE3dA6cE80bM800
+!i122 38
+l11
+L10 4
+VcU@oUTLM1LaMiS=[GL0^Z2
+!s100 JoTYXo<c<0djFRRGY1nFK1
+R6
+32
+R24
+!i10b 1
+R25
+R31
+R32
+!i113 1
+R11
+R12

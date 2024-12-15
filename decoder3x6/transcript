@@ -1,0 +1,14 @@
+# Compile of decoder3x6.vhd was successful.
+# Compile of and4portas.vhd was successful.
+# Compile of not1porta.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+do decoder3x6.do
+# vsim work.decoder3x6 
+# Start time: 08:30:33 on Dec 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder3x6(ckt)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# WARNING: No extended dataflow license exists

@@ -84,62 +84,71 @@ begin
     );
     
     -- Negando o seletor
-    u1 : portaNot port map(entrada_not => seletor_0_10b, saida_not => seletor_0_not_10b);
-    u2 : portaNot port map(entrada_not => seletor_1_10b, saida_not => seletor_1_not_10b);
-    u3 : portaNot port map(entrada_not => seletor_2_10b, saida_not => seletor_2_not_10b);
+    u1 : portaNot port map(
+        entrada_not => seletor_0_10b, 
+        saida_not => seletor_0_not_10b
+    );
+    u2 : portaNot port map(
+        entrada_not => seletor_1_10b, 
+        saida_not => seletor_1_not_10b
+    );
+    u3 : portaNot port map(
+        entrada_not => seletor_2_10b, 
+        saida_not => seletor_2_not_10b
+    );
 
     -- Criando as portas AND
-    and_inputs1 <= seletor_2_not_10b & seletor_1_not_10b & seletor_0_not_10b & C1;
+    and_inputs1 <= seletor_1_not_10b & seletor_2_not_10b & seletor_0_not_10b & C1;
     u_and1 : and4portas port map(
-        A => and_inputs1(9 downto 0),
-        B => and_inputs1(19 downto 10),
-        C => and_inputs1(29 downto 20),
+        A => seletor_1_not_10b,
+        B => seletor_2_not_10b,
+        C => seletor_0_not_10b,
         D => C1,
         saida_and_4_portas => s1
     );
 
-    and_inputs2 <= seletor_2_not_10b & seletor_1_not_10b & seletor_0_10b & C2;
+    and_inputs2 <= seletor_1_not_10b & seletor_2_not_10b & seletor_0_10b & C2;
     u_and2 : and4portas port map(
-        A => and_inputs2(9 downto 0),
-        B => and_inputs2(19 downto 10),
-        C => and_inputs2(29 downto 20),
+        A => seletor_1_not_10b,
+        B => seletor_2_not_10b,
+        C => seletor_0_10b,
         D => C2,
         saida_and_4_portas => s2
     );
 
-    and_inputs3 <= seletor_2_not_10b & seletor_1_10b & seletor_0_not_10b & C3;
+    and_inputs3 <= seletor_1_10b & seletor_2_not_10b & seletor_0_not_10b & C3;
     u_and3 : and4portas port map(
-        A => and_inputs3(9 downto 0),
-        B => and_inputs3(19 downto 10),
-        C => and_inputs3(29 downto 20),
+        A => seletor_1_10b,
+        B => seletor_2_not_10b,
+        C => seletor_0_not_10b,
         D => C3,
         saida_and_4_portas => s3
     );
 
-    and_inputs4 <= seletor_2_not_10b & seletor_1_10b & seletor_0_10b & C4;
+    and_inputs4 <= seletor_1_10b & seletor_2_not_10b & seletor_0_10b & C4;
     u_and4 : and4portas port map(
-        A => and_inputs4(9 downto 0),
-        B => and_inputs4(19 downto 10),
-        C => and_inputs4(29 downto 20),
+        A => seletor_1_10b,
+        B => seletor_2_not_10b,
+        C => seletor_0_10b,
         D => C4,
         saida_and_4_portas => s4
     );
 
-    and_inputs5 <= seletor_2_10b & seletor_1_not_10b & seletor_0_not_10b & C5;
+    and_inputs5 <= seletor_1_not_10b & seletor_2_10b & seletor_0_not_10b & C5;
     u_and5 : and4portas port map(
-        A => and_inputs5(9 downto 0),
-        B => and_inputs5(19 downto 10),
-        C => and_inputs5(29 downto 20),
+        A => seletor_1_not_10b,
+        B => seletor_2_10b,
+        C => seletor_0_not_10b,
         D => C5,
         saida_and_4_portas => s5
     );
 
     and_inputs6 <= seletor_2_10b & seletor_1_10b & seletor_0_not_10b & C6;
     u_and6 : and4portas port map(
-        A => and_inputs6(9 downto 0),
-        B => and_inputs6(19 downto 10),
-        C => and_inputs6(29 downto 20),
-        D => C6,
+        A => C6,
+        B => seletor_2_10b,
+        C => seletor_1_not_10b,
+        D => seletor_0_10b,
         saida_and_4_portas => s6
     );
 

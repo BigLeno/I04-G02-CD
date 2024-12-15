@@ -51,27 +51,23 @@ architecture Behavioral of mux6x1_10b is
         );
     end component;
 
-    -- Criando os sinais
+    -- Criando os sinais de saída das portas AND
     signal s1 : std_logic_vector(9 downto 0);
     signal s2 : std_logic_vector(9 downto 0);
     signal s3 : std_logic_vector(9 downto 0);
     signal s4 : std_logic_vector(9 downto 0);
     signal s5 : std_logic_vector(9 downto 0);
     signal s6 : std_logic_vector(9 downto 0);
+
+    -- Sinais para ampliar o seletor para 10 bits
     signal seletor_0_10b : std_logic_vector(9 downto 0);
     signal seletor_1_10b : std_logic_vector(9 downto 0);
     signal seletor_2_10b : std_logic_vector(9 downto 0);
+
+    -- Sinais para negar o seletor já com 10 bits
     signal seletor_0_not_10b : std_logic_vector(9 downto 0);
     signal seletor_1_not_10b : std_logic_vector(9 downto 0);
     signal seletor_2_not_10b : std_logic_vector(9 downto 0);
-    signal and_inputs1 : std_logic_vector(39 downto 0);
-    signal and_inputs2 : std_logic_vector(39 downto 0);
-    signal and_inputs3 : std_logic_vector(39 downto 0);
-    signal and_inputs4 : std_logic_vector(39 downto 0);
-    signal and_inputs5 : std_logic_vector(39 downto 0);
-    signal and_inputs6 : std_logic_vector(39 downto 0);
-
-    signal bit0 : std_logic;
 
 begin
 
@@ -98,7 +94,6 @@ begin
     );
 
     -- Criando as portas AND
-    and_inputs1 <= seletor_1_not_10b & seletor_2_not_10b & seletor_0_not_10b & C1;
     u_and1 : and4portas port map(
         A => seletor_1_not_10b,
         B => seletor_2_not_10b,
@@ -107,7 +102,6 @@ begin
         saida_and_4_portas => s1
     );
 
-    and_inputs2 <= seletor_1_not_10b & seletor_2_not_10b & seletor_0_10b & C2;
     u_and2 : and4portas port map(
         A => seletor_1_not_10b,
         B => seletor_2_not_10b,
@@ -116,7 +110,6 @@ begin
         saida_and_4_portas => s2
     );
 
-    and_inputs3 <= seletor_1_10b & seletor_2_not_10b & seletor_0_not_10b & C3;
     u_and3 : and4portas port map(
         A => seletor_1_10b,
         B => seletor_2_not_10b,
@@ -125,7 +118,6 @@ begin
         saida_and_4_portas => s3
     );
 
-    and_inputs4 <= seletor_1_10b & seletor_2_not_10b & seletor_0_10b & C4;
     u_and4 : and4portas port map(
         A => seletor_1_10b,
         B => seletor_2_not_10b,
@@ -134,7 +126,6 @@ begin
         saida_and_4_portas => s4
     );
 
-    and_inputs5 <= seletor_1_not_10b & seletor_2_10b & seletor_0_not_10b & C5;
     u_and5 : and4portas port map(
         A => seletor_1_not_10b,
         B => seletor_2_10b,
@@ -143,7 +134,6 @@ begin
         saida_and_4_portas => s5
     );
 
-    and_inputs6 <= seletor_2_10b & seletor_1_10b & seletor_0_not_10b & C6;
     u_and6 : and4portas port map(
         A => C6,
         B => seletor_2_10b,

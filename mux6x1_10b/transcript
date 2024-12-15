@@ -31,3 +31,22 @@ do mux6x1_10b.do
 # Loading work.portanot(ckt)
 # Loading work.and4portas(ckt)
 # Loading work.or6portas(ckt)
+# Compile of mux6x1_10b.vhd was successful.
+# Compile of and4portas.vhd was successful.
+# Compile of or6portas.vhd was successful.
+# Compile of not1porta.vhd was successful.
+# Compile of splitter.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+do mux6x1_10b.do
+# End time: 08:11:13 on Dec 15,2024, Elapsed time: 0:04:17
+# Errors: 0, Warnings: 2
+# vsim work.mux6x1_10b 
+# Start time: 08:11:13 on Dec 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux6x1_10b(behavioral)
+# Loading work.splitter(ckt)
+# Loading work.portanot(ckt)
+# Loading work.and4portas(ckt)
+# Loading work.or6portas(ckt)

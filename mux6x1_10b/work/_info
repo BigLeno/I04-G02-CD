@@ -10,10 +10,10 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 Eand4portas
-Z0 w1734213015
+Z0 w1734229611
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 37
+!i122 79
 Z3 dC:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b
 Z4 8C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/and4portas.vhd
 Z5 FC:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/and4portas.vhd
@@ -23,9 +23,9 @@ VN?e:NFJLPh>iaHJ4g[0TX2
 !s100 PLL=BAz98Anlk]HibRTFY1
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1734213229
+Z7 !s110 1734233101
 !i10b 1
-Z8 !s108 1734213229.000000
+Z8 !s108 1734233101.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/and4portas.vhd|
 Z10 !s107 C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/and4portas.vhd|
 !i113 1
@@ -35,7 +35,7 @@ Ackt
 R1
 R2
 DEx4 work 10 and4portas 0 22 N?e:NFJLPh>iaHJ4g[0TX2
-!i122 37
+!i122 79
 l15
 L14 4
 V:Kh[Fh@PGB0_MN5nFkk9O1
@@ -51,10 +51,10 @@ R10
 R11
 R12
 Emux6x1_10b
-Z13 w1734213225
+Z13 w1734232955
 R1
 R2
-!i122 36
+!i122 78
 R3
 Z14 8C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd
 Z15 FC:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd
@@ -75,41 +75,41 @@ R12
 Abehavioral
 R1
 R2
-DEx4 work 10 mux6x1_10b 0 22 5kb^HU<lC`[kOeT^FF`?R3
-!i122 2
-l49
-L17 82
-VBdN>n5GHK[?MOGJEoRaFd1
-!s100 EJ0AXfWMVQ9MYX5c6edXJ2
+DEx4 work 10 mux6x1_10b 0 22 <H<eZOM^bR`oRiYCH3mR_2
+!i122 78
+l76
+L17 141
+VGQQ6[KPU^<S[_eW?M170?3
+!s100 dN:^FYTKLC@G2S:ZoAmE^1
 R6
 32
-!s110 1734212098
+R7
 !i10b 1
-!s108 1734212098.000000
+R8
 R16
 R17
 !i113 1
 R11
 R12
 Eor6portas
-Z18 w1734213013
+R0
 R1
 R2
-!i122 38
+!i122 80
 R3
-Z19 8C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/or6portas.vhd
-Z20 FC:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/or6portas.vhd
+Z18 8C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/or6portas.vhd
+Z19 FC:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/or6portas.vhd
 l0
 L4 1
 VSeAZo`<9A<`B0nV?gU7:P2
 !s100 8O0<Rif4Y2E[2=d=`2iVD2
 R6
 32
-Z21 !s110 1734213230
+R7
 !i10b 1
 R8
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/or6portas.vhd|
-Z23 !s107 C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/or6portas.vhd|
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/or6portas.vhd|
+Z21 !s107 C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/or6portas.vhd|
 !i113 1
 R11
 R12
@@ -117,40 +117,40 @@ Ackt
 R1
 R2
 DEx4 work 9 or6portas 0 22 SeAZo`<9A<`B0nV?gU7:P2
-!i122 38
+!i122 80
 l17
 L16 4
 Vdzf=1baoz1AR>65J1lW^93
 !s100 ;L4]fDkZJc43nd]VTh[b20
 R6
 32
-R21
+R7
 !i10b 1
 R8
-R22
-R23
+R20
+R21
 !i113 1
 R11
 R12
 Eportanot
-Z24 w1734212269
+Z22 w1734232943
 R1
 R2
-!i122 39
+!i122 81
 R3
-Z25 8C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/not1porta.vhd
-Z26 FC:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/not1porta.vhd
+Z23 8C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/not1porta.vhd
+Z24 FC:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/not1porta.vhd
 l0
 L4 1
 V61TzZFi7lVPLYgz<g=L460
 !s100 26iS^0;^4I>EY67gX@0z41
 R6
 32
-R21
+Z25 !s110 1734233102
 !i10b 1
-Z27 !s108 1734213230.000000
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/not1porta.vhd|
-Z29 !s107 C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/not1porta.vhd|
+Z26 !s108 1734233102.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/not1porta.vhd|
+Z28 !s107 C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/not1porta.vhd|
 !i113 1
 R11
 R12
@@ -158,59 +158,59 @@ Ackt
 R1
 R2
 DEx4 work 8 portanot 0 22 61TzZFi7lVPLYgz<g=L460
-!i122 39
+!i122 81
 l12
 L11 4
 V_L:SRKMRH?j=dmGD5mV9V0
 !s100 bWf]D0koFeTY6faUV3NhO3
 R6
 32
-R21
+R25
 !i10b 1
+R26
 R27
 R28
-R29
 !i113 1
 R11
 R12
 Esplitter
-Z30 w1734212209
+Z29 w1734232382
 R1
 R2
-!i122 40
+!i122 82
 R3
-Z31 8C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd
-Z32 FC:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd
+Z30 8C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd
+Z31 FC:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd
 l0
 L4 1
-VOkLen_?BaClW5kL]aJ]I=0
-!s100 kLDFG@UFoWgzGEf[z4WVo0
+VZnVHm`>YLe`VRTgGRc?VC1
+!s100 d1;X2mOe33Q5g;IWzQlNW3
 R6
 32
-R21
+R25
 !i10b 1
-R27
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd|
-Z34 !s107 C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd|
+R26
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd|
+Z33 !s107 C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd|
 !i113 1
 R11
 R12
 Ackt
 R1
 R2
-Z35 DEx4 work 8 splitter 0 22 OkLen_?BaClW5kL]aJ]I=0
-!i122 40
+Z34 DEx4 work 8 splitter 0 22 ZnVHm`>YLe`VRTgGRc?VC1
+!i122 82
 l12
-Z36 L11 13
-Z37 VOMS@5k<RBoaT3:2ZP?8l?0
-Z38 !s100 Rlgg?`H[ZHPi[H1OPJkIA1
+Z35 L11 6
+Z36 Vi^YM;IM_iD]4JVQ_dM24n2
+Z37 !s100 kZ_3Ga:hQ@:Nch;mZVl?Y2
 R6
 32
-R21
+R25
 !i10b 1
-R27
+R26
+R32
 R33
-R34
 !i113 1
 R11
 R12

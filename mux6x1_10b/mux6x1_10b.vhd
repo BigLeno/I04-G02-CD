@@ -39,15 +39,15 @@ architecture Behavioral of mux6x1_10b is
 
     component portaNot
         port (
-            entrada_not : in std_logic;
-            saida_not : out std_logic
+            entrada_not : in std_logic_vector(9 downto 0);
+            saida_not : out std_logic_vector(9 downto 0)
         );
     end component;
 
     component splitter
         port (
-            entrada_splitter : in std_logic;
-            saida_splitter : out std_logic_vector(9 downto 0)
+            entrada_splitter : in std_logic_vector(2 downto 0);
+            A, B, C : out std_logic_vector(9 downto 0)
         );
     end component;
 
@@ -58,8 +58,12 @@ architecture Behavioral of mux6x1_10b is
     signal s4 : std_logic_vector(9 downto 0);
     signal s5 : std_logic_vector(9 downto 0);
     signal s6 : std_logic_vector(9 downto 0);
-    signal seletor_not : std_logic_vector(2 downto 0);
-    signal seletor_not_10b : std_logic_vector(29 downto 0); -- 3 sinais de 10 bits
+    signal seletor_0_10b : std_logic_vector(9 downto 0);
+    signal seletor_1_10b : std_logic_vector(9 downto 0);
+    signal seletor_2_10b : std_logic_vector(9 downto 0);
+    signal seletor_0_not_10b : std_logic_vector(9 downto 0);
+    signal seletor_1_not_10b : std_logic_vector(9 downto 0);
+    signal seletor_2_not_10b : std_logic_vector(9 downto 0);
     signal and_inputs1 : std_logic_vector(39 downto 0);
     signal and_inputs2 : std_logic_vector(39 downto 0);
     signal and_inputs3 : std_logic_vector(39 downto 0);
@@ -67,19 +71,25 @@ architecture Behavioral of mux6x1_10b is
     signal and_inputs5 : std_logic_vector(39 downto 0);
     signal and_inputs6 : std_logic_vector(39 downto 0);
 
-begin
-    -- Negando o seletor
-    u1 : portaNot port map(entrada_not => seletor_mux6x1_10b(0), saida_not => seletor_not(0));
-    u2 : portaNot port map(entrada_not => seletor_mux6x1_10b(1), saida_not => seletor_not(1));
-    u3 : portaNot port map(entrada_not => seletor_mux6x1_10b(2), saida_not => seletor_not(2));
+    signal bit0 : std_logic;
 
-    -- Transformando os bits negados em 10 bits
-    u_splitter1 : splitter port map(entrada_splitter => seletor_not(0), saida_splitter => seletor_not_10b(9 downto 0));
-    u_splitter2 : splitter port map(entrada_splitter => seletor_not(1), saida_splitter => seletor_not_10b(19 downto 10));
-    u_splitter3 : splitter port map(entrada_splitter => seletor_not(2), saida_splitter => seletor_not_10b(29 downto 20));
+begin
+
+    -- Ampliando o seletor para 10 bits
+    u_splitter00 : splitter port map(
+        entrada_splitter => seletor_mux6x1_10b, 
+        A => seletor_0_10b,
+        B => seletor_1_10b,
+        C => seletor_2_10b
+    );
+    
+    -- Negando o seletor
+    u1 : portaNot port map(entrada_not => seletor_0_10b, saida_not => seletor_0_not_10b);
+    u2 : portaNot port map(entrada_not => seletor_1_10b, saida_not => seletor_1_not_10b);
+    u3 : portaNot port map(entrada_not => seletor_2_10b, saida_not => seletor_2_not_10b);
 
     -- Criando as portas AND
-    and_inputs1 <= seletor_not_10b(29 downto 20) & seletor_not_10b(19 downto 10) & seletor_not_10b(9 downto 0) & C1;
+    and_inputs1 <= seletor_2_not_10b & seletor_1_not_10b & seletor_0_not_10b & C1;
     u_and1 : and4portas port map(
         A => and_inputs1(9 downto 0),
         B => and_inputs1(19 downto 10),
@@ -88,7 +98,7 @@ begin
         saida_and_4_portas => s1
     );
 
-    and_inputs2 <= seletor_not_10b(29 downto 20) & seletor_not_10b(19 downto 10) & seletor_mux6x1_10b(0) & C2;
+    and_inputs2 <= seletor_2_not_10b & seletor_1_not_10b & seletor_0_10b & C2;
     u_and2 : and4portas port map(
         A => and_inputs2(9 downto 0),
         B => and_inputs2(19 downto 10),
@@ -97,7 +107,7 @@ begin
         saida_and_4_portas => s2
     );
 
-    and_inputs3 <= seletor_not_10b(29 downto 20) & seletor_mux6x1_10b(1) & seletor_not_10b(9 downto 0) & C3;
+    and_inputs3 <= seletor_2_not_10b & seletor_1_10b & seletor_0_not_10b & C3;
     u_and3 : and4portas port map(
         A => and_inputs3(9 downto 0),
         B => and_inputs3(19 downto 10),
@@ -106,7 +116,7 @@ begin
         saida_and_4_portas => s3
     );
 
-    and_inputs4 <= seletor_not_10b(29 downto 20) & seletor_mux6x1_10b(1) & seletor_mux6x1_10b(0) & C4;
+    and_inputs4 <= seletor_2_not_10b & seletor_1_10b & seletor_0_10b & C4;
     u_and4 : and4portas port map(
         A => and_inputs4(9 downto 0),
         B => and_inputs4(19 downto 10),
@@ -115,7 +125,7 @@ begin
         saida_and_4_portas => s4
     );
 
-    and_inputs5 <= seletor_mux6x1_10b(2) & seletor_not_10b(19 downto 10) & seletor_not_10b(9 downto 0) & C5;
+    and_inputs5 <= seletor_2_10b & seletor_1_not_10b & seletor_0_not_10b & C5;
     u_and5 : and4portas port map(
         A => and_inputs5(9 downto 0),
         B => and_inputs5(19 downto 10),
@@ -124,7 +134,7 @@ begin
         saida_and_4_portas => s5
     );
 
-    and_inputs6 <= seletor_mux6x1_10b(2) & seletor_mux6x1_10b(1) & seletor_not_10b(9 downto 0) & C6;
+    and_inputs6 <= seletor_2_10b & seletor_1_10b & seletor_0_not_10b & C6;
     u_and6 : and4portas port map(
         A => and_inputs6(9 downto 0),
         B => and_inputs6(19 downto 10),

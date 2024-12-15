@@ -1,19 +1,4 @@
-C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity mux6x1_10b
--- Compiling architecture Behavioral of mux6x1_10b
-** Error (suppressible): C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd(69): (vcom-1272) Length of expected is 4; length of actual is 31.
-** Error (suppressible): C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd(75): (vcom-1272) Length of expected is 4; length of actual is 22.
-** Error (suppressible): C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd(81): (vcom-1272) Length of expected is 4; length of actual is 22.
-** Error (suppressible): C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd(87): (vcom-1272) Length of expected is 4; length of actual is 13.
-** Error (suppressible): C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd(93): (vcom-1272) Length of expected is 4; length of actual is 22.
-** Error (suppressible): C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd(99): (vcom-1272) Length of expected is 4; length of actual is 13.
-** Note: C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/mux6x1_10b.vhd(111): VHDL Compiler exiting
-
-} {} {}} C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd
+C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/splitter.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -21,12 +6,20 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity splitter
 -- Compiling architecture ckt of splitter
 
-} {} {}} C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/not1porta.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/not1porta.vhd
+} {} {}} C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/or6portas.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/or6portas.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity portaNot
--- Compiling architecture ckt of portaNot
+-- Compiling entity or6portas
+-- Compiling architecture ckt of or6portas
+
+} {} {}} C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/and4portas.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rgabr/Documents/I04-G02-CD/mux6x1_10b/and4portas.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity and4portas
+-- Compiling architecture ckt of and4portas
 
 } {} {}}
